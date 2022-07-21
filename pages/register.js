@@ -50,7 +50,7 @@ export default function Register() {
 				router.push('/home')
 			})
 			.catch(err => {
-				alert('Email Already Exists')
+				console.log(err)
 			})
 	}
 
