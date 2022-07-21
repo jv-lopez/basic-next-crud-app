@@ -28,6 +28,8 @@ export default function Register() {
 				console.log(response.user)
 				sessionStorage.setItem('Token', response.user.accessToken);
 				router.push('/home')
+			}).catch(err => {
+				alert(err);
 			})
 	}
 
